@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Type</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Supplier Id</th>
+
+<!--    <th>Author</th>-->
+<!--    <th>Isbn</th>-->
+<!--    <th>Pages</th>-->
+<!--    <th>Genre</th>-->
+<!--    <th>Subject</th>-->
+<!--    <th>Description</th>-->
+
+<!--    <th>Publisher</th>-->
+<!--    <th>Minimum Age</th>-->
+<!--    <th>Genre</th>-->
+
+<!--    <th>Artis</th>-->
+<!--    <th>Genre</th>-->
+  </tr>
+  <tr th:each="article:${articles}">
+    <td th:text="${article.id}">Id</td>
+    <td th:text="${article.type}">Type</td>
+    <td th:text="${article.title}">Title</td>
+    <td th:text="${article.price}">Price</td>
+    <td th:text="${article.supplierId}">Supplier Id</td>
+
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.author != null} ? ${article.author}">Author</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.isbn != null} ? ${article.isbn}">Isbn</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.pages != null} ? ${article.pages} ">Pages</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.getBookGenre}">Genre</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.getSubject}">Subject</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isBook(article)}" th:text="${article.getDescription}">Description</td>-->
+
+
+
+<!--    <td th:if="${T(com.example.Shopr.controllers.OverviewController).isGame(article)}" th:text="${article.publisher != null} ? ${article.publisher} ">Publisher</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isGame(article)}" th:text="${article.minAge != null} ? ${article.minAge}">Minimum Age</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isGame(article)}" th:text="${article.gameGenre != null} ? ${article.gameGenre}">Genre</td>-->
+
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isLp(article)}" th:text="${article.artist != null} ? ${article.artist}">Artis</td>-->
+<!--    <td  th:if="${T(com.example.Shopr.controllers.OverviewController).isLp(article)}" th:text="${article.lpGenre != null} ? ${article.lpGenre}">Genre</td>-->
+
+
+  </tr>
+</table>
+
+</body>
+</html>

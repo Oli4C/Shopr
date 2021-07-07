@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/login}" method="post" modelAttribute="users">
+
+
+
+    <label for="users">Users</label>
+    <select name="userName" id="users">
+
+
+        <option th:each="webuser: ${users}" th:text="${webuser.getUserName()}" th:value="${webuser.getUserName()}"></option>
+
+    </select>
+
+    <label for="pass">Password</label>
+    <input name="password" id="pass">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+</form>
+
+</body>
+</html>
